@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Flexbox styling</title>
+
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+  </head>
+
+  <body style="background-color:#EAF2F8;">
+    <!-- YOUR CONTENT GOES HERE -->
+
+    <div class="container">
+      <section class="top">
+        <h1>Caithlin Peña</h1>
+        <h2>Aspiring Journalist. K-pop enthusiast. Pizza lover.</h2>
+      </section>
+
+      <!-- <section class="photo"> -->
+
+      <figure>
+        <img class="main_img" src="images/beach-profile.jpeg">
+        <figcaption>Caithlin Peña at the beach. <span class="credit">Credit: Caithlin Pena </span></figcaption>
+      </figure>
+
+      <section class="text">
+        <p>Caithlin studied journalism and sociology at SUNY Stony Brook University and graduated with a B.A. in 2014. She's working as an Assitant Editor for YourTango while also getting her Master's in Journalism at the Craig Newmark Graduate School of Journalism. </p>
+        <p>Contact: caithlin.pena53@journalism.cuny.edu </p>
+      </section>
+
+      <h3 class="flex-hed">Check out her work:</h3> <!-- broke the subhed out of text to correct alignment based on mock -->
+
+      <section class="flex">
+        <!-- flex box refers to the box that contains the "flexed" content -->
+
+        <section class="img_holder">
+          <!-- each img_holder is flexed content -->
+          <figure class="sub_img">
+            <img class="main_img" src="images/justin-mccallum.jpg"> <!-- You should crop your images to be the same size before using them, otherwise, even with flex box, they come out uneven -->
+            <figcaption class="sub_cap">Justin McCallum, 30, a wedding photographer, says that he's happy to be vaccinated. <span class="credit">Credit: Caithlin Peña</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>New York City is slowly getting back on its feet and some New Yorkers believe that the answer to a full recovery is simple: vaccinations. Thirty-year-old Justin McCallum, a wedding photographer who resides in Manhattan, had to travel recently.
+“It’s amazing that so many locations are now requiring vaccinations for entry in various locations.”</p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="images/riders-alliance.jpg">
+            <figcaption class="sub_cap">Members of Riders Alliance organized outside of the Roosevelt Ave. subway stop in Jackson Heights, Queens. <span class="credit">Credit: Caithlin Peña</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>On Wednesday, members and supporters of the Riders Alliance gathered outside the subway stop of Roosevelt Ave. in Jackson Heights for a rally with one goal in mind: getting New York Representative Alexandria Ocasio-Cortez’s support for the Stronger Communities through Better Transit Act. </p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="images/concert.jpg">
+            <figcaption class="sub_cap">Caithlin Peña at K-CON, a cultural festival of all things Korean and K-pop. <span class="credit">Credit: Caithlin Peña</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>I moved to New York from the Philippines at age 14. For as long as I can remember, I’ve never felt like I was in danger being out and about. Not to say that I didn’t experience my fair share of racism then. But most of the time, they were just words and insults — and I’ve learned to just let them roll off my back and move on. Now, though, things are different. </p>
+          </section>
+        </section>
+
+      </section>
+      <!-- this ^ closes the flex box section -->
+
+    </div>
+
+    <!-- When you get to using javascript, you'll want to link to it at the bottom of the document, still inside the body. That's for later. -->
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Your javascript should be called here -->
+
+  </body>
+
+</html>
